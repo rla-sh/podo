@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<meta charset="utf8">
+		<style>
+	@font-face {
+    font-family: 'Mulmaru';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2601-4@1.1/Mulmaru.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;}
+
+html{font-family: 'Mulmaru';}
+
+			/*ctrl + slash >> CSS초기화 > footnote*/
+			body, h1, h2, h3, p{margin: 0; padding: 0;} 
+			section{background:lightgreen;
+				font-size: 30px;
+				padding: 130px 0px}
+			img{width: 50%; margin: 30px 0px;}
+			.contents{width: 700px; 
+				margin: auto; 
+				background: lightpink;
+				padding: 130px 0px;}
+			.none{background: none;}
+			.yellow{background: yellow;}
+			.pic{background: url(w4_02.jpg); background-size: 100%;
+				background-attachment: fixed;}
+			.pic2{background: url(w4_03.jpg); background-size: 50%;
+				background-attachment: fixed;}
+			.pic3{background: url(w4_01.gif); background-size: 20%;
+				background-attachment: fixed;}
+			.backdrop{backdrop-filter: blur(10px); color: white; font-size: 40px;font-weight: }
+			.b{font-size: 40px; font-weight: bold; color: saddlebrown;}
+			.b2{font-size: 50px; font-weight: bold; color: saddlebrown;}
+				
+		</style>
+	</head>
+	<body>
+		<!-- 여기서부터 시작 -->
+		<section>
+			<div class="contents none b">1. 위치는 왼쪽 위를 기준으로 생긴다.	
+				<img src="w4_01.gif">
+			</div>
+		</section>
+		<section class="pic">
+			<div class="contents none b">2. 폭은 가능한 긴 폭을 쓴다.</div>
+		</section>
+		<!-- 두 번째 섹션 시 -->
+		<section class="pic3">
+			<div class="contents none b2 backdrop">3. 높이는 최소한의 높이를 쓴다.</div>
+		</section>
+		<section class="pic2">
+			<div class="contents none b">4. 한 줄에 하나씩 쌓인다.</div>
+		</section>
+	</body>
+</html>
